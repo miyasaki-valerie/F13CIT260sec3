@@ -1,7 +1,7 @@
 /**********************************************
- * Try This 1-1
+ * Try This 1-2
  * Convert Gallons to Liters
- * GalToLit.java
+ * GalToLitTab.java
  * Author: Daniel Blankenship
  *********************************************/
 package galtolittab;
