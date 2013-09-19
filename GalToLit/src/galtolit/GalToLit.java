@@ -1,18 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/**********************************************
+ * Try This 1-1
+ * Convert Gallons to Liters
+ * GalToLit.java
+ * Author: Daniel Blankenship
+ *********************************************/
 package galtolit;
-
-/**
- *
- * @author Daniel Blankenship
- */
 public class GalToLit {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         double gallon;
         double liters;
