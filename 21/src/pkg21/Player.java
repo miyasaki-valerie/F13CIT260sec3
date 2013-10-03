@@ -1,56 +1,27 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package pkg21;
 
 import java.io.Serializable;
-
+/**
+ *
+ * @author Daniel Blankenship
+ */
 public class Player implements Serializable{
     
-    private String name;
-    private String instructions;
-    private long wins = 0;
-    private long losses = 0;
-    private long ties = 0;
-    
+    String name;    
+    int wins = 0;   //initialize the variable
+    int losses = 0; //initialize the vairable
+
+    void displayStats(){
+        System.out.println(wins);   //display the wins
+        System.out.println(losses); //display the losses
+    }
+     
     public Player() {
+        //constructor: creates the Player class
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getInstructions() {
-        return instructions;
-    }
-
-    public void setInstructions(String instructions) {
-        this.instructions = instructions;
-    }
-
-    public long getWins() {
-        return wins;
-    }
-
-    public void setWins(long wins) {
-        this.wins = wins;
-    }
-
-    public long getLosses() {
-        return losses;
-    }
-
-    public void setLosses(long losses) {
-        this.losses = losses;
-    }
-
-    public long getTies() {
-        return ties;
-    }
-
-    public void setTies(long ties) {
-        this.ties = ties;
-    }
-    
 }
