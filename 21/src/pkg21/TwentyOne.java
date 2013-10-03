@@ -1,3 +1,8 @@
+/**************************************************************
+ * Authors: Valerie Miyasaki
+ *          Daniel Blankenship  
+ *************************************************************/
+
 package pkg21;
 
 import java.util.Scanner;
