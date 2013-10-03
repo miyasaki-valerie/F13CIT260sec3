@@ -2,9 +2,7 @@
  * Authors: Valerie Miyasaki
  *          Daniel Blankenship  
  *************************************************************/
-
 package pkg21;
-
 import java.util.Scanner;
 
 public class TwentyOne {
@@ -19,6 +17,12 @@ public class TwentyOne {
       to.displayHelp();
       Player newPlayer = new Player(); //create an instance of the class
       newPlayer.displayStats();        //instance of the class & call the function
+    
+      Play gamePlay = new Play();      //create an instance of the Play class
+      gamePlay.display();              //displays instance variables for Play class
+    
+      mainMenu mMenu = new mainMenu(); //create an instance of the mainMenu class
+      mMenu.display();                 //displays instance variables for mainMenu class
     }
     
     public void getName() {
