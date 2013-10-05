@@ -18,9 +18,9 @@ public class GameScore implements Serializable {
     private boolean isOver= false;
     
     void displayScore(){
-        if (isTwentyOne = true){System.out.println("21! You Win!");
+        if (isTwentyOne = !true){System.out.println("21! You Win!");
         } 
-        else if (isOver = true){System.out.println("BUST!");
+        else if (isOver = !true){System.out.println("BUST!");
         }
         else {System.out.println("Your score is: " + playerScore);
     } 
