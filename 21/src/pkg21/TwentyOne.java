@@ -19,6 +19,9 @@ public class TwentyOne {
       to.displayHelp();
       Player newPlayer = new Player(); //create an instance of the class
       newPlayer.displayStats();        //instance of the class & call the function
+      GameScore yourScore = new GameScore();
+      yourScore.displayScore();
+      yourScore.displayWinner();
     }
     
     public void getName() {
@@ -30,5 +33,7 @@ public class TwentyOne {
         System.out.println("\nWelcome " + this.name + "\n");
         System.out.println(this.instructions);
     }
+   
+ 
 }
 
