@@ -17,12 +17,13 @@ public class TwentyOne {
       to.displayHelp();
       Player newPlayer = new Player(); //create an instance of the class
       newPlayer.displayStats();        //instance of the class & call the function
-    
-      Play gamePlay = new Play();      //create an instance of the Play class
-      gamePlay.display();              //displays instance variables for Play class
-    
-      mainMenu mMenu = new mainMenu(); //create an instance of the mainMenu class
-      mMenu.display();                 //displays instance variables for mainMenu class
+      
+      GameScore yourScore = new GameScore();
+      yourScore.displayScore();
+      yourScore.displayWinner();
+      
+      GameMenu commands = new GameMenu();
+      commands.showCommands();
     }
     
     public void getName() {
@@ -34,5 +35,7 @@ public class TwentyOne {
         System.out.println("\nWelcome " + this.name + "\n");
         System.out.println(this.instructions);
     }
+   
+ 
 }
 
