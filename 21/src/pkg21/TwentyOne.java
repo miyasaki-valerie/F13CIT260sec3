@@ -12,18 +12,21 @@ public class TwentyOne {
             + "The instructions are as follows...\n";
     
     public static void main(String[] args) {
-      TwentyOne to = new TwentyOne();
-      to.getName();
-      to.displayHelp();
-      Player newPlayer = new Player(); //create an instance of the class
-      newPlayer.displayStats();        //instance of the class & call the function
+      TwentyOne to = new TwentyOne();  //access member functions of TwentyOne
+      to.getName();                    //get user name  
+      to.displayHelp();                //display help options    
       
-      GameScore yourScore = new GameScore();
-      yourScore.displayScore();
-      yourScore.displayWinner();
-      
+      // Shows available commands from game menu
       GameMenu commands = new GameMenu();
       commands.showCommands();
+      
+      // Displays the scores 
+      System.out.println("\n**PLAYER SCORING**");
+      GameScore score = new GameScore();
+      score.inputPlayerScore();        //user inputs scores
+      score.calcScore();               //adds scores together
+      score.displayScore();            //display the scores     
+      score.displayWinner();           //tells who winner is
     }
     
     public void getName() {
@@ -35,7 +38,5 @@ public class TwentyOne {
         System.out.println("\nWelcome " + this.name + "\n");
         System.out.println(this.instructions);
     }
-   
- 
 }
 
