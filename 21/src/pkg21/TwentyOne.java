@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class TwentyOne {
         
     String name;
-    String instructions = "\n\tWelcome to the game: **21**\n\n"
+    String instructions = "\tTHIS IS THE GAME **21**\n\n"
             + "The instructions are as follows...\n";
     
     public static void main(String[] args) {
@@ -20,13 +20,14 @@ public class TwentyOne {
       GameMenu commands = new GameMenu();
       commands.showCommands();
       
+      // Displays the wins and losses
+      Player player = new Player();
+    
       // Displays the scores 
       System.out.println("\n**PLAYER SCORING**");
       GameScore score = new GameScore();
-      score.inputPlayerScore();        //user inputs scores
-      score.calcScore();               //adds scores together
-      score.displayScore();            //display the scores     
-      score.displayWinner();           //tells who winner is
+      score.requestGameSize();
+      score.calcScore();        //user inputs scores        
     }
     
     public void getName() {

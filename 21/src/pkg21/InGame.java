@@ -4,7 +4,7 @@
 package pkg21;
 import java.io.Serializable;
 
-public class Play implements Serializable{
+public class InGame implements Serializable{
     String hit = "h";
     String stand = "st";
     String shuffle = "sh";
