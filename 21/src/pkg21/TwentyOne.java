@@ -20,6 +20,7 @@ public class TwentyOne {
       GameMenu commands = new GameMenu();
       commands.showCommands();
       
+       
       // Displays the wins and losses
       Player player = new Player();
     
